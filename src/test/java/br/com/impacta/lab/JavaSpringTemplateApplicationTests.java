@@ -1,27 +1,12 @@
-package br.com.impacta.lab;
+package  br.com.impacta.lab ;
+import static  org.junit.Assert.assertEquals ;
+import  java.util.ArrayList ;
+import  org.junit.Test ;
 
-import static org.junit.Assert.assertEquals;
+import  br.com.impacta.lab.Pessoa ;
+import  br.com.impacta.lab.PessoaFisica ;
 
-import org.junit.Test;
+class  JavaSpringTemplateApplicationTests {
 
-class JavaSpringTemplateApplicationTests {
-
-	@Test
-	public void shouldHaveInstantiateCCWithSucess() {
-		
-		Conta cc = new ContaCorrente(10, 1, "CC");
-		
-		assertEquals("CC", cc.getTipo());
-		
-	}
-	
-	@Test
-	public void shouldHaveInstantiateCPWithSucess() {
-		
-		Conta cp = new ContaPoupanca(5, 12, "CP");
-		
-		assertEquals("Cp", cp.getTipo());
-		
-	}
-	
-}
+	@Teste
+	public  void  shouldHavePFWithInterfacePessoa () {
